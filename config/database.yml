@@ -1,0 +1,33 @@
+default: &default
+  encoding: unicode
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *default
+  database: base_development
+  username: <%= ENV['DB_ENV_POSTGRESQL_USER'] %>
+  password: <%= ENV['DB_ENV_POSTGRESQL_PASS'] %>
+  host: <%= ENV['DB_PORT_5432_TCP_ADDR'] %>
+
+test:
+  <<: *default
+  database: base_test
+  username: <%= ENV['DB_DATABASE_USERNAME'] %>
+  password: <%= ENV['DB_DATABASE_PASSWORD'] %>
+  host: <%= ENV['DB_PORT_5432_TCP_ADDR'] %>
+
+staging:
+  <<: *default
+  database: base_staging
+  username: <%= ENV['DB_DATABASE_USERNAME'] %>
+  password: <%= ENV['DB_DATABASE_PASSWORD'] %>
+  host: <%= ENV['DB_PORT_5432_TCP_ADDR'] %>
+
+production:
+  <<: *default
+  database: base
+  username: <%= ENV['DB_DATABASE_USERNAME'] %>
+  password: <%= ENV['DB_DATABASE_PASSWORD'] %>
+  host: <%= ENV['DB_PORT_5432_TCP_ADDR'] %>

@@ -1,1 +1,0 @@
-{"nfs":{"/app":{"type":"nfs","guestpath":"/app","hostpath":"/Users/dyoung/Dropbox/Source/personal/sites/rails_vagrant_docker_base","disabled":false,"map_uid":501,"map_gid":20,"nfs_udp":true,"nfs_version":3,"uuid":"3580478647"}},"virtualbox":{"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/dyoung/Dropbox/Source/personal/sites/rails_vagrant_docker_base","disabled":false}}}

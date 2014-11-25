@@ -20,7 +20,7 @@ RUN git clone https://github.com/sstephenson/ruby-build.git /tmp/ruby-build && \
     rm -rf /tmp/ruby-build
 
 # Install ruby
-RUN ruby-build -v 2.0.0-p481 /usr/local
+RUN ruby-build -v 2.1.4 /usr/local
  
 # Install base gems
 RUN gem install bundler rubygems-bundler --no-rdoc --no-ri

@@ -25,6 +25,7 @@ group :development do
   gem 'spring'
   gem 'pry'
   gem 'hirb'
+  gem 'bond-rails'
 end
 
 

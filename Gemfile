@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.7'
+gem 'rails', '~> 4.1.0'
 
 gem 'pg'
 
@@ -16,18 +16,17 @@ gem 'haml'
 gem 'sdoc',         '~> 0.4.0', group: :doc
 
 group :development, :test do
+  gem 'spring'
   gem 'dotenv-rails'
   gem 'minitest-rails'
   gem 'database_cleaner'
 end
 
 group :development do
-  gem 'spring'
   gem 'pry'
   gem 'hirb'
   gem 'bond-rails'
 end
-
 
 gem 'turbolinks'
 gem 'unicorn'

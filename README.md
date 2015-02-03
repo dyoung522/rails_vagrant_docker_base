@@ -10,5 +10,8 @@ Docker containers for:
 * PostgreSQL
 * Redis
 
-This was based upon work created by [TalkingQuickly](https://github.com/TalkingQuickly) and modified for my own needs.
+This was based upon work created by [TalkingQuickly] and modified for my own needs from his excellent [blog post]
 
+
+[TalkingQuickly]: https://github.com/TalkingQuickly
+[blog post]: http://www.talkingquickly.co.uk/2014/06/rails-development-environment-with-vagrant-and-docker/
